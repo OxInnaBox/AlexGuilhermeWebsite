@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shoot or Rescue?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jura:wght@300..700&display=swap" rel="stylesheet">  
+  </head>
+
+  <body class="background">
+    
+    <div class="bgscreen">
+
+      <div id="gamecontainer">
+
+        <div class="topflex">
+
+          <div class="ufodiv">
+
+            <p id="ufoname">UFO</p>
+
+            <p class="base" id="time">Time Remaining:</p>
+            <p class="base" id="size">Size:</p>
+            <p class="base" id="vel">Velocity:</p>
+            <p class="base" id="tail">Tail:</p>
+            <p class="base" id="route">Route:</p>
+            <p class="base" id="signal">Signal:</p>
+
+          </div>
+
+          <div class="infodiv">
+
+            <div class="nav">
+              <button class="navselect" id="sizeselect" onclick="sizeSelect()">Size</button>
+              <button class="navselect" id="velselect" onclick="velSelect()">Velocity</button>
+              <button class="navselect" id="tailselect" onclick="tailSelect()">Tail</button>
+              <button class="navselect" id="routeselect" onclick="routeSelect()">Route</button>
+              <button class="navselect" id="signalselect" onclick="signalSelect()">Signal</button>
+            </div>
+
+            <div class="infocontainer">
+
+              <div id="sizeinfo">
+
+                <p class="base">Small Ships: 50m-100m</p>
+                <p class="base">Medium Ships: 300-400m</p>
+                <p class="base">Big Ships: 600m-1300m</p>
+                <p class="base">Alien Ships: 50m-1600m</p>
+                <p class="base">Asteroids: 100m-1300m</p>
+
+              </div>
+              <div id="velinfo">
+
+                <p class="base">Small Ships: 40-60km/s</p>
+                <p class="base">Medium Ships: 10-20km/s</p>
+                <p class="base">Big Ships: 1-5km/s</p>
+                <p class="base">Alien Ships: 1-100km/s</p>
+                <p class="base">Asteroids: 10-70km/s</p>
+
+              </div>
+              <div id="tailinfo">
+
+                <p class="base">Small Ships: None</p>
+                <p class="base">Medium Ships: None</p>
+                <p class="base">Big Ships: None</p>
+                <p class="base">Alien Ships: None</p>
+                <p class="base">Asteroids: Contains tail</p>
+
+              </div>
+              <div id="routeinfo">
+
+                <p class="base">Small Ships: Colliding or Passing</p>
+                <p class="base">Medium Ships: Colliding or Passing</p>
+                <p class="base">Big Ships: Colliding or Passing</p>
+                <p class="base">Alien Ships: Colliding or Passing</p>
+                <p class="base">Asteroids: Colliding or Passing</p>
+
+              </div>
+              <div id="signalinfo">
+
+                <p class="base">Small Ships: Rescue</p>
+                <p class="base">Medium Ships: Rescue</p>
+                <p class="base">Big Ships: Rescue</p>
+                <p class="base">Alien Ships: Distorted or Peaceful</p>
+                <p class="base">Asteroids: None</p>
+
+              </div>
+
+            </div>
+
+            <div class="ammo">
+              <p class="ammotxt" id="teams">Teams:</p>
+              <p class="ammotxt" id="ammo">Ammo:</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="bottomflex">
+
+          <button class="action" id="rescue" onclick="rescue()">RESCUE</button>
+
+          <button class="action" id="pass" onclick="pass()">PASS</button>
+
+          <button class="action" id="shoot" onclick="shoot()">SHOOT</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

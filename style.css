@@ -1,0 +1,230 @@
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Backgrounds*/
+@media {    
+    
+    .background {
+        background-color: rgb(60, 60, 60);
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .bgscreen {
+        background-image: url("media/bgscreen.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 620px;
+        height: 420px;
+        padding: 90px;
+    }
+
+}
+
+.topflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*UFO*/
+@media {
+
+    .ufodiv {
+        width: 45%;
+    }
+
+    #ufoname {
+        font-family: "Jersey 10";
+        font-size: 64px;
+        margin: 0;
+        color: white;
+    }
+
+    .base {
+        font-family: "Jersey 10";
+        font-size: 24px;
+        margin-top: 1%;
+        color: white;
+    }
+
+}
+
+/*INFO*/
+@media {
+
+    .infodiv {
+        width: 45%;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        border-width: 4px;
+        border-bottom-style: solid;
+        border-color: white;
+    }
+
+    .navselect {
+        border: none;
+        font-family: "Jersey 10";
+        font-size: 20px;
+        color: white;
+        background-color: rgb(58, 60, 64);
+    }
+
+    .navselect:hover {
+        cursor: pointer;
+    }
+
+    .infocontainer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 224px;
+    }
+
+    .ammo {
+        display: flex;
+        justify-content: space-between;
+        border-width: 4px;
+        border-top-style: solid;
+        border-color: white;
+    }
+
+    .ammotxt {
+        color: white;
+        font-family: "Jersey 10";
+        font-size: 24px;
+        margin-top: 24px;
+    }
+
+}
+
+/*INFOTABS*/
+@media {
+
+    #sizeinfo {
+        display: none;
+    }
+    #velinfo {
+        display: none;
+    }
+    #tailinfo {
+        display: none;
+    }
+    #routeinfo {
+        display: none;
+    }
+    #signalinfo {
+        display: none;
+    }
+
+}
+
+.bottomflex {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+/*Buttons*/
+@media {
+    
+    .action {
+        font-family: "Jersey 10";
+        font-size: 35px;
+        color: white;
+        border-style: solid;
+        border-color: white;
+        border-width: 4px;
+        width: 25%;
+    }
+
+    .action:hover {
+        cursor: pointer;
+        color: gainsboro;
+        border-color: gainsboro;
+    }
+
+    #rescue {
+        background-color: forestgreen;
+    }
+
+    #rescue:hover {
+        background-color: darkgreen;
+    }
+
+    #rescue:active {
+        background-color: white;
+    }
+
+    #pass {
+        background-color: steelblue;
+    }
+
+    #pass:hover {
+        background-color: rgb(13, 13, 96);
+    }
+
+    #pass:active {
+        background-color: white;
+    }
+
+    #shoot {
+        background-color: crimson;
+    }
+
+    #shoot:hover {
+        background-color: darkred;
+    }
+
+    #shoot:active {
+        background-color: white;
+    }
+
+    .action:active {
+        color: white;
+        border-color: white;
+    }
+
+}
+
+/*Mobile*/
+@media (max-width: 900px) {
+
+    .bgscreen {
+        background-image: url("media/mobilebg.png");
+        width: 300px;
+        height: 800px;
+        padding: 50px;
+    }
+
+    .topflex {
+        display: block;
+    }
+
+    #ufoname {
+        font-size: 48px;
+    }
+
+    .base {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .ufodiv {
+        width: 100%;
+    }
+
+    .infodiv {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .action {
+        font-size: 24px;
+    }
+}
