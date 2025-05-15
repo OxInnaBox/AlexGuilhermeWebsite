@@ -25,8 +25,6 @@
           Use the info table to verify whether the nearing UFOs are ships or asteroids, and shoot, rescue or let them pass accordingly! You'll get more ammo or rescue teams over time, but watch out, they can still run out if you waste them!
         </p>
 
-        <p class="base" id="highscore">Your Highscore: None</p>
-
         <div class="playbutton"><button class="action" id="rescue" onclick="play()">PLAY</button></div>
 
 
@@ -128,6 +126,16 @@
 
         </div>
 
+        <div class="bottomflex">
+
+          <p class="base" id="rescued">Ships rescued: 0</p>
+
+          <p class="base" id="score">Score: 0</p>
+
+          <p class="base" id="eliminated">Threats Eliminated: 0</p>
+
+        </div>
+
       </div>
 
       <div id="lost">
@@ -138,7 +146,7 @@
           You have lost.
         </p>
 
-        <p class="base" id="highscore">Your Highscore: None</p>
+        <p class="base" id="finalscore">Final Score: 0</p>
 
         <div class="playbutton"><button class="action" id="rescue" onclick="play()">PLAY AGAIN</button></div>
 
@@ -149,4 +157,5 @@
     <script src="script.js"></script>
 
   </body>
+
 </html>
