@@ -4,6 +4,23 @@
   font-style: normal;
 }
 
+#menu {
+    display: block;
+}
+
+#gamecontainer {
+    display: none;
+}
+
+#lost {
+    display: none;
+}
+
+.playbutton {
+    display: flex;
+    justify-content: space-around;
+}
+
 /*Backgrounds*/
 @media {    
     
@@ -53,7 +70,7 @@
 
 }
 
-/*INFO*/
+/*Info*/
 @media {
 
     .infodiv {
@@ -103,7 +120,7 @@
 
 }
 
-/*INFOTABS*/
+/*Infotabs*/
 @media {
 
     #sizeinfo {
@@ -198,8 +215,8 @@
     .bgscreen {
         background-image: url("media/mobilebg.png");
         width: 300px;
-        height: 800px;
-        padding: 50px;
+        height: 680px;
+        padding: 70px;
     }
 
     .topflex {
@@ -207,12 +224,12 @@
     }
 
     #ufoname {
-        font-size: 48px;
+        font-size: 30px;
     }
 
     .base {
         font-size: 20px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .ufodiv {
@@ -221,10 +238,29 @@
 
     .infodiv {
         width: 100%;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     .action {
-        font-size: 24px;
+        font-size: 14px;
+    }
+
+    .ammotxt {
+        font-size: 20px;
+    }
+
+    .navselect {
+        font-size: 20px;
+    }
+
+    .infocontainer {
+        height: 150px;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 600px) and (max-width: 900px) {
+    .background {
+        margin-top: 20%;
     }
 }

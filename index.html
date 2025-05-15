@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jura:wght@300..700&display=swap" rel="stylesheet"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shoot or Rescue?</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jura:wght@300..700&display=swap" rel="stylesheet">  
-  </head>
+    </head>
 
   <body class="background">
     
     <div class="bgscreen">
+
+      <div id="menu">
+
+        <p id="ufoname">Shoot or Rescue?</p>
+
+        <p class="base">
+          Defend Earth from colliding asteroids and enemy alien ships by shooting them, while rescuing allied human ships and letting peaceful aliens or passing asteroids pass!
+          <br><br>
+          Use the info table to verify whether the nearing UFOs are ships or asteroids, and shoot, rescue or let them pass accordingly! You'll get more ammo or rescue teams over time, but watch out, they can still run out if you waste them!
+        </p>
+
+        <p class="base" id="highscore">Your Highscore: None</p>
+
+        <div class="playbutton"><button class="action" id="rescue" onclick="play()">PLAY</button></div>
+
+
+      </div>
 
       <div id="gamecontainer">
 
@@ -46,10 +63,10 @@
 
               <div id="sizeinfo">
 
-                <p class="base">Small Ships: 50m-100m</p>
+                <p class="base">Small Ships: 50m-90m</p>
                 <p class="base">Medium Ships: 300-400m</p>
                 <p class="base">Big Ships: 600m-1300m</p>
-                <p class="base">Alien Ships: 50m-1600m</p>
+                <p class="base">Alien Ships: 500m-1600m</p>
                 <p class="base">Asteroids: 100m-1300m</p>
 
               </div>
@@ -58,7 +75,7 @@
                 <p class="base">Small Ships: 40-60km/s</p>
                 <p class="base">Medium Ships: 10-20km/s</p>
                 <p class="base">Big Ships: 1-5km/s</p>
-                <p class="base">Alien Ships: 1-100km/s</p>
+                <p class="base">Alien Ships: 10-100km/s</p>
                 <p class="base">Asteroids: 10-70km/s</p>
 
               </div>
@@ -76,7 +93,7 @@
                 <p class="base">Small Ships: Colliding or Passing</p>
                 <p class="base">Medium Ships: Colliding or Passing</p>
                 <p class="base">Big Ships: Colliding or Passing</p>
-                <p class="base">Alien Ships: Colliding or Passing</p>
+                <p class="base">Alien Ships: Unclear</p>
                 <p class="base">Asteroids: Colliding or Passing</p>
 
               </div>
@@ -85,7 +102,7 @@
                 <p class="base">Small Ships: Rescue</p>
                 <p class="base">Medium Ships: Rescue</p>
                 <p class="base">Big Ships: Rescue</p>
-                <p class="base">Alien Ships: Distorted or Peaceful</p>
+                <p class="base">Alien Ships: Enemy or Peaceful</p>
                 <p class="base">Asteroids: None</p>
 
               </div>
@@ -110,6 +127,20 @@
           <button class="action" id="shoot" onclick="shoot()">SHOOT</button>
 
         </div>
+
+      </div>
+
+      <div id="lost">
+
+        <p id="ufoname">Game Over</p>
+
+        <p class="base" id="losttxt">
+          You have lost.
+        </p>
+
+        <p class="base" id="highscore">Your Highscore: None</p>
+
+        <div class="playbutton"><button class="action" id="rescue" onclick="play()">PLAY AGAIN</button></div>
 
       </div>
 
