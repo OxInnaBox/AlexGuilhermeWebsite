@@ -24,6 +24,10 @@
 /*Backgrounds*/
 @media {    
     
+    body {
+        background-color: rgb(60, 60, 60);
+    }
+
     .background {
         background-color: rgb(60, 60, 60);
         display: flex;
